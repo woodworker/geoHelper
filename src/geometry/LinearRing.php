@@ -23,6 +23,6 @@
 namespace de\prolope\geoHelper\geometry;
 
 
-class Linearring extends LineString {
+class LinearRing extends LineString {
 
 }
