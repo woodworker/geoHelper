@@ -1,7 +1,7 @@
 geoHelper
 =========
 
-geoHelper will be a set of php classes to help in the daili work with geodata
+geoHelper will be a set of php classes to help in the daily work with geodata
 
 
 Goals
