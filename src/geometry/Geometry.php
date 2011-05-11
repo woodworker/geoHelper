@@ -29,7 +29,13 @@ class Geometry {
 	public function coordinateDimension() {}
 	public function spatialDimension() {}
 	public function geometryType() {}
-	public function SRID() {}
+
+	/**
+	 * at the moment only 4326 (WGS84) is supported
+	 *
+	 * @return integer
+	 */
+	public function SRID() { return 4326; }
 	public function envelope() {}
 	public function asText() {}
 	public function asBinary () {}
