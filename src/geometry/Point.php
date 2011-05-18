@@ -25,8 +25,33 @@ namespace de\prolope\geoHelper\geometry;
 
 class Point extends Geometry {
 
-	public function X(){}
-	public function Y(){}
-	public function Z(){}
-	public function M(){}
+    protected $x;
+    protected $y;
+    protected $z;
+    protected $m;
+
+    public function __get( $name ){
+        switch( $name ){
+            case 'x':
+                return $this->x;
+                break;
+            case 'y':
+                return $this->y;
+                break;
+            case 'z':
+                return $this->z;
+                break;
+            case 'm':
+                return $this->m;
+                break;
+        }
+    }
+
+    public function dimension( ){
+        if( $this->z !== null ){
+            return 3;
+        } else {
+            return 2;
+        }
+    }
 }
