@@ -39,7 +39,6 @@ namespace de\prolope\geoHelper;
 spl_autoload_register(function($class) {
     if (0 === strpos($class, 'de\\prolope\\geoHelper\\')) {
         $path = __DIR__.'/'.implode('/', array_slice(explode('\\', $class), 3)).'.php';
-	echo $path,"\n";
         if (!stream_resolve_include_path($path)) {
             return false;
         }
@@ -47,5 +46,3 @@ spl_autoload_register(function($class) {
         return true;
     }
 });
-
-new geometry\Point();
