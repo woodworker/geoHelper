@@ -47,6 +47,23 @@ class Point extends Geometry {
         }
     }
 
+    public function __set( $name , $value ){
+        switch( $name ){
+            case 'x':
+                return $this->x = $value;
+                break;
+            case 'y':
+                return $this->y = $value;
+                break;
+            case 'z':
+                return $this->z = $value;
+                break;
+            case 'm':
+                return $this->m = $value;
+                break;
+        }
+    }
+
     public function dimension( ){
         if( $this->z !== null ){
             return 3;

@@ -25,7 +25,7 @@ namespace de\prolope\geoHelper\geometry;
 
 abstract class Geometry {
 //simple
-	abstract public function dimension() {}
+	abstract public function dimension();
 	public function coordinateDimension() {}
 	public function spatialDimension() {}
 	public function geometryType() {}
